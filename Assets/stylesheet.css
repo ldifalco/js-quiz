@@ -1,0 +1,80 @@
+*{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: blueviolet;    
+}
+
+#score{
+    font-size: 40px;
+}
+
+#start-btn{
+    background-color: cornflowerblue;
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+
+}
+
+#questions{
+    text-align: center;
+    margin-top: 50px;
+    background-color: crimson;
+    
+}
+
+
+
+/* -one{
+        text-align: center;
+        margin-top: 50px;
+        background-color: crimson;
+        display: none;
+        
+}
+
+.question-two{
+    text-align: center;
+    margin-top: 50px;
+    background-color: crimson;
+    display: none;
+    
+}
+
+.question-three{
+    text-align: center;
+    margin-top: 50px;
+    background-color: crimson;
+    display: none;
+    
+}
+
+.question-four{
+    text-align: center;
+    margin-top: 50px;
+    background-color: crimson;
+    display: none;
+    
+}
+
+.question-five{
+    text-align: center;
+    margin-top: 50px;
+    background-color: crimson;
+    display: none;
+    
+}
+ */
+
+
+        
+        
+
