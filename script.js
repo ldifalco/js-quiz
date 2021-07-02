@@ -28,21 +28,44 @@ var questions = [
 },
 
 ];
+var timeLeft;
 var questionIndex = 0;
 
+function startQuiz () {
+    //start timer and then show question?
+    startTimer()
+    showQuestion()
+}
+
+function selectChoice (e) {
+    var choiceChosen = e.target.textContent
+    var correctAnswer = questions[questionIndex].answer
+
+    if(choiceChosen == correctAnswer){
+        console.log("correct")
+    } else {
+        //penalty for getting it wrong
+        timeLeft -= 5;
+        console.log("incorrect")
+    }
+    
+    
+    questionIndex ++
+    if(questionIndex < questions.length) {   
+        showQuestion ()
+    }
 
 
+}
 
-
-
-document.getElementById("start-btn").addEventListener("click", function(){
-    var timeleft = 10;
+function startTimer(){
+    timeleft = 10;
 
     var timer = setInterval(function function1(){
     document.getElementById("score").innerHTML = timeleft;
 
     timeleft -= 1;
-    if(timeleft === 0){
+    if(timeleft <= 0 || questionIndex >= questions.length){
         clearInterval(timer);
         document.getElementById("score").innerHTML = "Time is up!"
        
@@ -50,8 +73,24 @@ document.getElementById("start-btn").addEventListener("click", function(){
 
     }, 1000);
 
-    render(questionIndex);
+    // render(questionIndex);
 
-});
+}
+
+function showQuestion () {
+    document.getElementById("question").textContent = questions[questionIndex].title
+    document.getElementById("optionOne").textContent = questions[questionIndex].choices[0]
+    document.getElementById("optionTwo").textContent = questions[questionIndex].choices[1]
+    document.getElementById("optionThree").textContent = questions[questionIndex].choices[2]
+    document.getElementById("optionFour").textContent = questions[questionIndex].choices[3]
+}
+
+document.getElementById("start-btn").addEventListener("click", startQuiz);
+
+document.getElementById("optionOne").addEventListener("click", selectChoice);
+document.getElementById("optionTwo").addEventListener("click", selectChoice);
+document.getElementById("optionThree").addEventListener("click", selectChoice);
+document.getElementById("optionFour").addEventListener("click", selectChoice);
+
 
 
