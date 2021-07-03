@@ -1,3 +1,5 @@
+![js quiz 2 ](https://user-images.githubusercontent.com/81760763/124357477-d5b8a980-dbd8-11eb-8f65-3058bb667aef.png)
+![js quiz 1](https://user-images.githubusercontent.com/81760763/124357478-d6514000-dbd8-11eb-8ce1-1abfdee1e149.png)
 # js-quiz
 Welcome to my Javascript Quiz
 
