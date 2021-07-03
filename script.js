@@ -59,7 +59,7 @@ function selectChoice (e) {
 }
 
 function startTimer(){
-    timeleft = 25;
+    timeleft = 10;
 
     var timer = setInterval(function function1(){
     document.getElementById("score").innerHTML = timeleft;
