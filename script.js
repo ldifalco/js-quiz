@@ -45,7 +45,7 @@ function selectChoice (e) {
         console.log("correct")
     } else {
         //penalty for getting it wrong
-        timeLeft -= 5;
+        timeLeft -= 1;
         console.log("incorrect")
     }
     
@@ -59,7 +59,7 @@ function selectChoice (e) {
 }
 
 function startTimer(){
-    timeleft = 10;
+    timeleft = 25;
 
     var timer = setInterval(function function1(){
     document.getElementById("score").innerHTML = timeleft;
