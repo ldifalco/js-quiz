@@ -53,13 +53,14 @@ function selectChoice (e) {
     questionIndex ++
     if(questionIndex < questions.length) {   
         showQuestion ()
+
     }
 
 
 }
 
 function startTimer(){
-    timeleft = 10;
+    timeleft = 25;
 
     var timer = setInterval(function function1(){
     document.getElementById("score").innerHTML = timeleft;
@@ -91,6 +92,9 @@ document.getElementById("optionOne").addEventListener("click", selectChoice);
 document.getElementById("optionTwo").addEventListener("click", selectChoice);
 document.getElementById("optionThree").addEventListener("click", selectChoice);
 document.getElementById("optionFour").addEventListener("click", selectChoice);
+
+
+
 
 
 
